@@ -6,8 +6,20 @@ const defaultCartState = {
   totalAmount: 0,
 };
 
+const cartReducer = (state, action) => {
+  if (action.type === "ADD") {
+    const updatedAmount = (state.totalAmount += action.item.money);
+    return {
+      items: action.item,
+      totalAmount: updatedAmount,
+    };
+  }
+  if (action.type === "REMOVE") {
+  }
+};
+
 const CartProvider = (props) => {
-  const [cartState, dispatchCartAction] = useReducer(cartContext, defaultCartState);
+  const [cartState, dispatchCartAction] = useReducer(cartReducer, defaultCartState);
 
   const addItemHandler = (item) => {
     dispatchCartAction({ type: "ADD", item: item });

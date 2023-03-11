@@ -2,17 +2,17 @@ const PERSON_DATA = [
   {
     name: "Jeff Bezos",
     img: "https://ares.shiftdelete.net/2020/07/dunyanin-en-zengin-insani-jeff-bezos-kimdir.jpg",
-    money: "114,000,000,000",
+    money: 114000000000,
   },
   {
     name: "Elon Musk",
     img: "https://www.rollingstone.com/wp-content/uploads/2023/02/elon-fires-engineer.jpg",
-    money: "228,000,000,000",
+    money: 228000000000,
   },
   {
     name: "Bill Gates",
     img: "https://pbs.twimg.com/profile_images/1564398871996174336/M-hffw5a_400x400.jpg",
-    money: "105,300.000.000",
+    money: 105300000000,
   },
 ];
 
