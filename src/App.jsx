@@ -32,7 +32,7 @@ function App() {
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1 place-items-center py-10">
             {ITEM_DATA.map((item, index) => {
-              return <BuyItemCard key={index} id={item.id} name={item.name} money={item.money} source={item.img} />;
+              return <BuyItemCard key={index} id={item.id} item={item} name={item.name} money={item.money} source={item.img} />;
             })}
           </div>
         )}

@@ -1,12 +1,14 @@
 import { useState } from "react";
 import Modal from "./Modal";
+import CartContext from "../store/cart-context";
 
 const CartButton = () => {
   const [modalHandler, setModalHandler] = useState(false);
+
   const onModalHandler = () => {
-    console.log("hello");
-    !modalHandler ? setModalHandler(true) : setModalHandler(false);
+    setModalHandler(!modalHandler);
   };
+
   return (
     <>
       <div className="h-24 z-10 object-contain flex justify-center">
@@ -14,7 +16,7 @@ const CartButton = () => {
           Cart
         </button>
       </div>
-      {modalHandler && <Modal onClick={onModalHandler} />}
+      {modalHandler && <Modal />}
     </>
   );
 };
