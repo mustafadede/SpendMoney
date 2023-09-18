@@ -11,7 +11,7 @@ const PERSON_DATA = [
   },
   {
     name: "Bill Gates",
-    img: "https://pbs.twimg.com/profile_images/1564398871996174336/M-hffw5a_400x400.jpg",
+    img: "https://pbs.twimg.com/profile_images/1674815862879178752/nTGMV1Eo_400x400.jpg",
     money: 105300000000,
   },
 ];
